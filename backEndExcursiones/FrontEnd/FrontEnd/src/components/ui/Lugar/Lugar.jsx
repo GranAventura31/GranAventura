@@ -4,7 +4,7 @@ import React from 'react'
 export const Lugar = () => {
   return (
     <div> 
-      <div className='ciudadIzquierda'>
+      <div className='ciudadIzquierdaI'>
         <section>
         <img className='imagenciudadI' src="https://www.labitacoradecarlosyeli.com/wp-content/uploads/2021/07/2-playas-imperdibles-si-estas-en-Santa-Marta-Colombia-Cabezote-1.jpg" alt=""/>
         </section>
@@ -22,7 +22,7 @@ export const Lugar = () => {
         <img className='imagenciudadD' src="https://f.hubspotusercontent00.net/hubfs/5696451/Torre%20del%20Reloj%20en%20Cartagena%20de%20Indias,%20Colombia.jpg" alt="" />
         </section>
       </div>
-      <div className='ciudadIzquierda'>
+      <div className='ciudadIzquierdaI'>
         <section>
         <img className='imagenciudadI' src="https://i0.wp.com/www.medellindaytrips.com/wp-content/uploads/2018/04/Featured-Image-Comuna-13-article.jpg?fit=2560%2C1536&ssl=1" alt="" />
         </section>
@@ -40,7 +40,7 @@ export const Lugar = () => {
         <img className='imagenciudadD' src="https://http2.mlstatic.com/D_NQ_NP_688002-MCO46152356538_052021-O.jpg" alt="" />
         </section>
       </div>
-      <div className='ciudadIzquierda'>
+      <div className='ciudadIzquierdaI'>
         <section>
         <img className='imagenciudadI' src="https://i.ytimg.com/vi/sJVRvhsEDk0/maxresdefault.jpg" alt="" />
         </section>
@@ -58,7 +58,7 @@ export const Lugar = () => {
         <img className='imagenciudadD' src="https://www.barranquilla.gov.co/wp-content/uploads/2020/01/recorrido_obras_metropolitano-5_-portada.jpg" alt="" />
         </section>
       </div>
-      <div className='ciudadIzquierda'>
+      <div className='ciudadIzquierdaI'>
         <section>
         <img className='imagenciudadI' src="https://www.civitatis.com/f/colombia/cartagena-de-indias/galeria/volcan-totumo.jpg" alt="" />
         </section>
@@ -79,5 +79,3 @@ export const Lugar = () => {
     </div>
   )
 }
-
-

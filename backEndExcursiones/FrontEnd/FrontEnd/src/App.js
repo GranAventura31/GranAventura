@@ -6,11 +6,13 @@ import { Header } from './components/layouts/Header/Header'
 import { Contenido } from '../src/components/pages/Contenido/Contenido'
 import React, {useEffect, useState, } from 'react'
 
+
 //admin
 import { HomeA  } from './components/ADMINISTRADOR/pages/HomeA/HomeA.jsx';
 import { LoginA } from './components/ADMINISTRADOR/pages/LoginA/LoginA.jsx';
 import { HeaderA } from './components/ADMINISTRADOR/layouts/HeaderA/HeaderA.jsx'
 import { ContenidoA } from './components/ADMINISTRADOR/pages/ContenidoA/ContenidoA.jsx'
+import { PageLugares } from './components/pages/PageLugares/PageLugares';
 
 
 
@@ -39,6 +41,7 @@ function App() {
       <Routes>
         <Route path='/Administrador' element={<HomeA/>}/>
         <Route path='/ContenidoAdministrador' element={<ContenidoA/>}/>
+        <Route path='/Lugares' element={<PageLugares/>}/>
       </Routes>
       </div>
       <div>
