@@ -2,6 +2,8 @@
 const express = require('express')
 // const connection = require('express-myconnection')
 const routes = express.Router()
+const nodemailer = require('nodemailer')
+const crypto = require('crypto')
 
 routes.get('/', (req, res) => {
     req.getConnection((err,conn) =>{
@@ -55,6 +57,45 @@ routes.post('/Register', (req, res) => {
     req.getConnection((err,conn) =>{
         if (err) return res.send(err)
         conn.query('CALL RegistrarUsuario(?,?,?,?,?)',[nombre,correo,contrasena,rol,telefono], (err, rows) => {
+            if(err) return res.send(err)
+
+            res.send({'response':'User Inserted'})
+        })
+    })
+})
+routes.post('/ActualizarContrasena', async(req, res) => {
+    const generateRandom = () => {
+    const password = crypto.randomBytes(4).toString('hex');
+    return password;
+}
+
+    const correo = req.body.Correo;
+    let contrasenaNueva = String(generateRandom());
+
+    let config ={
+    host : 'smtp.gmail.com',
+    port : 587,
+    auth : {
+        user: 'granaventura86@gmail.com',
+        pass: 'vyaofmvtkmnvlzoc'
+    }
+    }
+    let mensaje = {
+        from : 'granaventura@gmail.com',
+        to : correo,
+        subject : 'Correo de pueba',
+        text : '¿Hola, has olvidado tu contraseña? \nPara ingresar a tu cuenta deberas usar esta contraseña: '+contrasenaNueva+' Cuando ingreses no olvides cambiar tu contraseña a una nueva contraseña que no olvides'
+    }
+
+    const transport = nodemailer.createTransport(config);
+
+    const info = await transport.sendMail(mensaje);
+
+    console.log(info);
+
+    req.getConnection((err,conn) =>{
+        if (err) return res.send(err)
+        conn.query('UPDATE registro set Contrasena = ? WHERE Correo = ?',[contrasenaNueva,correo], (err, rows) => {
             if(err) return res.send(err)
 
             res.send({'response':'User Inserted'})

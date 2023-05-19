@@ -620,6 +620,16 @@ hr{
   text-decoration: underline;
 }
 
+.TituloGranA{
+  outline: none;
+  text-decoration: none;
+  /* font-size: 1.5rem; */
+  /* padding: 1.5rem 1.5rem 0.2rem 1.5rem; */
+  color: black;
+  /* margin: 0.3rem; */
+  font-family: open-sans;
+}
+
 
 .Footer{
   width: 100%;

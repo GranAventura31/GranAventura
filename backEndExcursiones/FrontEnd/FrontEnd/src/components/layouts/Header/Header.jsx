@@ -5,7 +5,7 @@ import { Nombre } from '../../ui/Nombre/Nombre'
 export const Header = () => {
   return (
     <header>
-      <Nombre content='Gran Aventura' style='h1'/>
+      <Nombre content='GranAventura' style='h1'/>
       <Navbar />
     </header>
   )

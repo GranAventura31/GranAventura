@@ -13,6 +13,7 @@ import { LoginA } from './components/ADMINISTRADOR/pages/LoginA/LoginA.jsx';
 import { HeaderA } from './components/ADMINISTRADOR/layouts/HeaderA/HeaderA.jsx'
 import { ContenidoA } from './components/ADMINISTRADOR/pages/ContenidoA/ContenidoA.jsx'
 import { PageLugares } from './components/pages/PageLugares/PageLugares';
+import { RecuperacionDeContraseña } from './components/layouts/RecuperacionDeContraseña/RecuperacionDeContraseña';
 
 
 
@@ -41,7 +42,6 @@ function App() {
       <Routes>
         <Route path='/Administrador' element={<HomeA/>}/>
         <Route path='/ContenidoAdministrador' element={<ContenidoA/>}/>
-        <Route path='/Lugares' element={<PageLugares/>}/>
       </Routes>
       </div>
       <div>
@@ -49,6 +49,8 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/Login' element={<Login user={user} setUser={setUser}/>}/>
         <Route path='/Contenido' element={<Contenido/>}/>
+        <Route path='/Lugares' element={<PageLugares/>}/>
+        <Route path='/RecuperacionContraseña' element={<RecuperacionDeContraseña/>}/>
       </Routes>
       </div>
     </div>

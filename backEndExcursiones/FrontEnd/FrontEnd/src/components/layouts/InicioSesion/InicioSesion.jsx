@@ -5,6 +5,7 @@ import { FaUserCircle } from 'react-icons/fa';
 import { BsTelephoneXFill } from 'react-icons/bs';
 import Axios from 'axios';
 import swal from 'sweetalert2';
+import { Link }  from 'react-router-dom'
 import { Routes, Route} from 'react-router-dom'
 
 
@@ -128,7 +129,7 @@ const login = (e) => {
                   <label>Contraseña</label>
               </div>
               <div className="remember-forgot">
-                  <a> ¿Has olvidado tu contraseña? </a>
+                  <Link className='recuperacionContraseña' to='/RecuperacionContraseña'><a> ¿Has olvidado tu contraseña? </a></Link>
               </div>  
               <button type='submit' className="btn" onClick={login}> Inicio Sesion </button>
             </form>

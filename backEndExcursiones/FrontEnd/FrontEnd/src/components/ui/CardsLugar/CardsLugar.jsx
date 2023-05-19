@@ -37,7 +37,7 @@ export const CardsLugar = () => {
     </div>
     <div className='CardciudadIzquierda'>
         <div className='CarddivImagen'>
-        <Link to='/Lugares'><img src='https://res.cloudinary.com/dlohqvzri/image/upload/v1684445750/barranquillaVentana_jwrjt0.jpg' alt="" className='CardimagenciudadI' /></Link>    
+        <Link to='/Lugares'><img src='https://res.cloudinary.com/dlohqvzri/image/upload/v1684449303/Volcan_del_totumo_hfiiof.jpg' alt="" className='CardimagenciudadI' /></Link>    
         </div>
         <div className='CarddivInformacion'>
             <h2 className='Cardtitulociudad'>Volcán del Totumo</h2>
@@ -84,7 +84,7 @@ export const CardsLugar = () => {
         <Link to='/Lugares'><img src='https://res.cloudinary.com/dlohqvzri/image/upload/v1684447768/imagen2_o1vimc.jpg' alt="" className='CardimagenciudadI' /></Link>  
         </div>
         <div className='CarddivInformacion'>
-            <h2 className='Cardtitulociudad'>Santa Marta</h2>
+            <h2 className='Cardtitulociudad'>Piedra del peñol</h2>
             {/* <p className='Cardparrafociudad'>Conoce la piedra mas alta de Colombia y disfruta de la mejor vista</p> */}
             {/* <p className='Cardparrafociudad'>viaja con nosotros a conocer La perla de América</p> */}
            
