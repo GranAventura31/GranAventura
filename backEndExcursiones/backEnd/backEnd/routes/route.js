@@ -4,6 +4,7 @@ const express = require('express')
 const routes = express.Router()
 const nodemailer = require('nodemailer')
 const crypto = require('crypto')
+const Stripe = require('stripe')
 
 routes.get('/', (req, res) => {
     req.getConnection((err,conn) =>{
@@ -126,6 +127,30 @@ routes.put('/:id', (req, res) => {
         })
     })
 })
+const stripe = new Stripe("sk_test_51NBLwlHRmqMvRqXdEsPinf0NTFIoz8E6puhnDJciR3kMYYdjsD5Vm4EoBn94yc7jUhBAk7ntedTdOKs5HnLL0fDs00Fwv0aXAn"); 
+
+routes.post('/checkout', async (req, res) => {
+    try {
+    const { id, amount } = req.body 
+
+    const payment = await stripe.paymentIntents.create({
+        amount,
+        currency: 'USD',
+        description: "Gaming Keyboard",
+        payment_method: id,
+        confirm: true 
+    });
+
+    console.log(payment);
+
+
+    res.send({message: 'Succesfull payment'})
+    } catch (error) {
+        console.log(error);
+        res.json({message: error})
+    }
+    // console.log(req.body);
+    // res.send('received')
+})
 
 module.exports = routes
-

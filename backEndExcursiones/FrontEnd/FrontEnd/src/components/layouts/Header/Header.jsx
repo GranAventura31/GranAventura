@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <header>
       <Nombre content='GranAventura' style='h1'/>
-      <Navbar />
+      <Navbar/>
     </header>
   )
 }

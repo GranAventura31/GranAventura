@@ -5,7 +5,7 @@ export const Lugares = () => {
   return (
     <div className='lugares'>
       <h2 className='titulolugares'>LUGARES A VISITAR</h2>
-      <hr className='barraT'/>
+      <hr className='hrLugaresVisitar'/>
       <Lugar/>
     </div>
   )

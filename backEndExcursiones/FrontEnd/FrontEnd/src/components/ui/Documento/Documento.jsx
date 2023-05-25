@@ -5,7 +5,7 @@ export const Documento = () => {
   return (
     <div className='documento'>
       <h1 className='titulodocumentos'>DOCUMENTOS</h1>
-      <hr className='barraT'/>
+      <hr className='hrDocumento'/>
       <Documentos/>
     </div>
   )

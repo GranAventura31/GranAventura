@@ -9,7 +9,7 @@ export const Persona = () => {
             </section>
             <section className='info'>
                 <h2 className='titulopersona'>Bayron</h2>
-                <hr />
+                <hr className='hrPersona'/>
                 <h3 className='rol'>Guia</h3>
                 <p className='parrafopersona'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere beatae est sequi tempora, at deserunt amet sapiente, alias molestiae veniam vel repellendus harum nobis magnam ex quos et laudantium?</p>
             </section>
@@ -20,7 +20,7 @@ export const Persona = () => {
             </section>
             <section className='info'>
                 <h2 className='titulopersona'>Bayron</h2>
-                <hr />
+                <hr className='hrPersona'/>
                 <h3 className='rol'>Guia</h3>
                 <p className='parrafopersona'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere beatae est sequi tempora, at deserunt amet sapiente, alias molestiae veniam vel repellendus harum nobis magnam ex quos et laudantium?</p>
             </section>
@@ -31,7 +31,7 @@ export const Persona = () => {
             </section>
             <section className='info'>
                 <h2 className='titulopersona'>Bayron</h2>
-                <hr />
+                <hr className='hrPersona'/>
                 <h3 className='rol'>Guia</h3>
                 <p className='parrafopersona'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere beatae est sequi tempora, at deserunt amet sapiente, alias molestiae veniam vel repellendus harum nobis magnam ex quos et laudantium?</p>
             </section>
@@ -42,7 +42,7 @@ export const Persona = () => {
             </section>
             <section className='info'>
                 <h2 className='titulopersona'>Bayron</h2>
-                <hr />
+                <hr className='hrPersona'/>
                 <h3 className='rol'>Guia</h3>
                 <p className='parrafopersona'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam facere beatae est sequi tempora, at deserunt amet sapiente, alias molestiae veniam vel repellendus harum nobis magnam ex quos et laudantium?</p>
             </section>

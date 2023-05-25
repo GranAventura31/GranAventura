@@ -7,9 +7,9 @@ export const Testimonioss = () => {
     <div className='DivTestimonioss'>
         <div>
           <h2 className='titulolugares'>Testimonios</h2>
-          <hr className='barraT'/>  
+          <hr className='hrTestimonios'/>  
         </div>
-        <Testimonio/>
+        <Testimonio img='https://res.cloudinary.com/dlohqvzri/image/upload/v1684431234/playa_blanca_ilzsdy.jpg'/>
     </div>
   )
 }

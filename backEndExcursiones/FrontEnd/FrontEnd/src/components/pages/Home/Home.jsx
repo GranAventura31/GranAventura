@@ -10,7 +10,7 @@ export const Home = () => {
         <Header/>
         <IconWhat/>
         <Main/>
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

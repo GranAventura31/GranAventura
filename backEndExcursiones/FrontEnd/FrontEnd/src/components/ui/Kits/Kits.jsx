@@ -5,9 +5,9 @@ export const Kits = () => {
   return (
     <div>
       <h2 className='tituloKit'>KITS</h2>
-      <hr className='hrContenido' />
+      <hr className='hrKit'/>
       <section className='containerkit'>
-      <Kit/>
+        <Kit/>
       </section>
     </div>
   )

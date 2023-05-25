@@ -7,6 +7,7 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
+
 header{
   width: 100%;
   height: 6rem;
@@ -20,7 +21,6 @@ header{
 }
 
 .barraT{
-  /* margin-top: 1.5rem; */
   margin-left: 46.2%;
   display: flex;
   justify-content: center;
@@ -52,7 +52,7 @@ header{
   font-size: 1.5rem;
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 10px;
-  background: #1dad78;
+  background: #43b38a;
 }
 
 .log:focus {
@@ -67,7 +67,6 @@ header{
 
 h1{
   padding: 1.5rem;
- 
 }
 
 main{
@@ -77,7 +76,6 @@ main{
 .inicio{
   width: 100%;
   height: 50rem;
-   /* background: url(https://res.cloudinary.com/dlohqvzri/image/upload/v1679518183/fondoGranAventura_flpjfd.png); */
   background-size: cover;
   color: #1cd48d;
 }
@@ -88,10 +86,10 @@ main{
   justify-content: center;
   align-items: center;
   color: rgb(255, 0, 0);
-  width: 117.3rem;
+  width: 118.9rem;
 }
 .d-block {
-  width: 120rem;
+  width: 119rem;
   height: 50rem;
 }
 .lugares{
@@ -124,7 +122,7 @@ main{
 }
 
 /* div cards cities */
-.CardLugar{
+.containerCards{
   display: flex;
   flex-wrap: wrap;
   padding: 5rem;
@@ -138,7 +136,6 @@ main{
 }
 
 .CarddivImagen{
-  /* background: #008000;  */
   border-radius: 2rem 2rem 0 0;
   width: 100%;
   height: 60%;
@@ -147,19 +144,19 @@ main{
 
 
 .CarddivInformacion{
-  background: #1dad78;
+  background: #49c296;
   height: 25%;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   border-radius:  0 0 2rem 2rem;
 }
 
+
 .Cardtitulociudad{
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 0.5rem;
   display: flex;
   justify-content: center;
+  font-size: 2rem;
 }
 
 .CardimagenciudadI{
@@ -186,7 +183,6 @@ main{
   font-size: 1.5rem;
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 10px;
-  /* margin-top: 2rem; */
   background: #1dad78;
 }
 
@@ -306,19 +302,69 @@ main{
   justify-content: center;
 }
 
-hr{
-  margin-left: 4.8rem;
-  width: 8.5rem;
-  height: 2px;
-  background: green;
+/* Hr Pagina Inicio*/
+.hrCardLugaresAVisitar{
+  width: 33rem;
+  height: 0.2rem;
+  margin-left: 43rem;
+  background-color: #1cd48d;
+}
+.hrTestimonios{
+  width: 18rem;
+  height: 0.2rem;
+  margin-left: 50rem;
+  background-color: #1cd48d;
+}
+.hrPersonal{
+  width: 18rem;
+  height: 0.2rem;
+  margin-left: 50rem;
+  background-color: #1cd48d;
+}
+.hrPersona{
+  width: 8rem;
+  height: 0.2rem;
+  margin-left: 4rem;
+  background-color: #1cd48d;
 }
 
-.hr1{
-  /* margin-left: 4.8rem; */
-  width: 90%;
-  height: 2px;
-  background: green;
+
+/* Hr Contenido */
+.hrKit{
+  width: 13rem;
+  height: 0.2rem;
+  margin-left: 52.5rem;
+  background-color: #1cd48d;
 }
+.hrProductoKit{
+  width: 9rem;
+  height: 0.1rem;
+  margin-left: 3rem;
+  background-color: #1cd48d;
+}
+.hrDocumento{
+  width: 30rem;
+  height: 0.2rem;
+  margin-left: 45rem;
+  background-color: #1cd48d;
+}
+.barrita{
+  border: none;
+  border-left: 1px solid hsla(200, 10%, 50%,100);
+  height: 3rem;
+  width: 1px;
+  margin-left: 30px;
+  background-color: #1cd48d;
+}
+/* Hr Lugares a Visitar */
+.hrLugaresVisitar{
+  width: 40rem;
+  height: 0.2rem;
+  margin-left: 40rem;
+  background-color: #1cd48d;
+}
+
+
 
 .rol{
   display: flex;
@@ -336,7 +382,6 @@ hr{
   justify-content: center;
   padding-top: 12rem;
   font-size: 3rem;
-  /* margin-top: 7rem; */
 }
 
 .documentos{
@@ -355,13 +400,7 @@ hr{
   padding: 2rem ;
   background: rgb(249 249 249);
 }
-.barrita{
-  border: none;
-  border-left: 1px solid hsla(200, 10%, 50%,100);
-  height: 3rem;
-  width: 1px;
-  margin-left: 30px; 
-}
+
 
 .titulopermisos{
   font-size: 3rem;
@@ -371,9 +410,13 @@ hr{
 .descarga{
   margin-left: 3rem;
   width: 10rem;
-  color: aliceblue;
+  /* color: aliceblue; */
   background: #1dad78;
   border-color: aliceblue;
+}
+.descargaDocumento{
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -414,7 +457,6 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 10rem; */
   height: 90vh;
 }
 
@@ -565,7 +607,6 @@ hr{
 
 .remember-forgot a:hover{
   text-decoration: underline;
-  /* color: #1dad78; */
 }
 
 .register-link{
@@ -623,10 +664,7 @@ hr{
 .TituloGranA{
   outline: none;
   text-decoration: none;
-  /* font-size: 1.5rem; */
-  /* padding: 1.5rem 1.5rem 0.2rem 1.5rem; */
   color: black;
-  /* margin: 0.3rem; */
   font-family: open-sans;
 }
 
@@ -635,11 +673,9 @@ hr{
   width: 100%;
   height: 100%;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   background: rgb(228, 228, 228);
-  /* background: rgb(249 249 249); */
 }
 
 .redes{
@@ -647,7 +683,6 @@ hr{
   border: 2px #1cd48d;
   height: 2rem;
   display: flex;
-  /* background-color: #000000; */
   justify-content: center;
   padding: 1rem;
 }
@@ -671,14 +706,10 @@ hr{
   justify-content: center;
   margin-top: 1rem;
   color: gray;
-  /* font-size: 1}rem; */
-  /* margin-right: 3rem; */
 }
 
 
 /* Contenido */
-
-
 .tituloKit{
   display: flex;
   justify-content: center;
@@ -686,12 +717,7 @@ hr{
   font-size: 3rem;
 }
 
-.hrContenido{
-  width: 8.5rem;
-  margin-left: 46.2%;
-  height: 2px;
-  background: green;
-}
+
 
 .Kits{
   background-color: rgb(236, 236, 236) ;
@@ -802,12 +828,7 @@ hr{
   height: 70%;
 }
 
-.hrProducto{
-  margin-left: 3rem;
-  width: 8.5rem;
-  height: 2px;
-  margin-top: 0.5rem;
-}
+
 
 .nombreProducto{
   height: 30%;
@@ -853,9 +874,7 @@ input[type=number]::-webkit-outer-spin-button {
   position: fixed;
   width: 55px;
   height: 55px;
-  /* line-height: 60px; */
   margin-top: 46rem;
-  /* bottom: 0.1px; */
   right: 30px;
   background-color: #008000;
   border-radius: 50px;
@@ -960,4 +979,129 @@ input[type=number]::-webkit-outer-spin-button {
 .parrafociudadD{
   margin-top: 1rem;
   font-size: 1.3rem;
+}
+
+/* Recuperacion Contraseña */
+.divRecuperacion{
+  display: flex;
+  justify-content: center;
+  margin-top: 13rem; 
+}
+
+.recuperacionContrasena{
+  width: 50%;
+  height: 30rem;
+  background-size: contain;
+  border: solid 1px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 30px #000000;
+}
+
+.devolverRecuperacion{
+  font-size: 2rem;
+  position: absolute;
+  margin-right: 45%;
+  margin-top: 2rem;
+  color: #000000;
+}
+
+.formRecuperacion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgRecuperacion{
+  width:9rem;
+  height: 8rem;
+  border-radius: 70px;
+  margin-bottom: 3rem;
+  margin-left: 9rem;
+}
+
+.h2Recuperacion{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.btnRecuperar{
+  width: 30%;
+  height: 2rem;
+  margin-left: 9.5rem;
+  border-radius: 10px;
+  background: #162938;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btnRecuperar:hover{
+  background: #259b6e;
+}
+
+/* Compra Kits */
+
+.modalCompra{
+  background: #ffffff;
+  width: 50%;
+  height: 80%;
+  margin: 6rem 0 0 30rem;
+  border: solid 2px;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px #000000;
+}
+
+.bodyCompra{
+  display: flex;
+  justify-content: center;
+}
+
+.cardCompra{
+  width: 30rem;
+  height:27rem;
+  border: solid 2px #000000;
+  border-radius: 10px;
+  margin-top: 10rem;
+  display: flex;
+}
+
+.tarjeta{
+  padding: 1rem 0rem 1rem 2.5rem;
+  overflow: hidden;
+}
+
+
+.divImgCompra{
+  overflow: hidden;
+  width: 100%;
+  margin-left: 2.5rem;
+}
+
+.imgCiudadCompra{
+  width: 25rem;
+  border-radius: 10px;
+  -webkit-transition: 1s linear;
+  transition: 0.5s linear;
+}
+
+.precioCompra{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btnConfirmCompra{
+  width: 10rem;
+  height: 3rem;
+  background-color: #1dad78;
+  color: #000000;
+  border-radius: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 9rem;
+  cursor: pointer;
+}
+
+.btnConfirmCompra:hover{
+  background: #1cd48d;
 }
