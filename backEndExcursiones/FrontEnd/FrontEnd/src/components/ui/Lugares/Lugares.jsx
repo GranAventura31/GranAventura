@@ -4,7 +4,7 @@ import {Lugar} from '../../ui/Lugar/Lugar'
 export const Lugares = () => {
   return (
     <div className='lugares'>
-      <h2 className='titulolugares'>LUGARES A VISITAR</h2>
+      <h1 className='titulolugares'>LUGARES A VISITAR</h1>
       <hr className='hrLugaresVisitar'/>
       <Lugar/>
     </div>

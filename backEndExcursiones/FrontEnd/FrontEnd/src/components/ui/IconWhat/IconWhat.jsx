@@ -13,20 +13,20 @@ export const IconWhat = () => {
             </i>
         </a>
         </div>
-        <div>
+        {/* <div>
         <a href="https://es-la.facebook.com/ExcursionesGranAventura/" className='btn-face' target='_black'>
             <i className='icon-facebook'>
                 <ImFacebook/>
             </i>
         </a>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
         <a href="https://instagram.com/granaventuraexc?igshid=YmMyMTA2M2Y=" className='btn-insta' target='_black'>
             <i className='icon-instagram'>
                 <GrInstagram/>
             </i>
         </a>
-        </div>
+        </div> */}
     </div>
   )
 }

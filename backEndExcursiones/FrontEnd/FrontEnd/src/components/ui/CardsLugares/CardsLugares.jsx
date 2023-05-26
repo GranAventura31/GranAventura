@@ -6,11 +6,10 @@ export const CardsLugares = () => {
   return (
     <div>
         <div>
-          <h2 className='titulolugares'>LUGARES A VISITAR</h2>
+          <h1 className='titulolugares'>LUGARES A VISITAR</h1>
           <hr className='hrCardLugaresAVisitar'/>
         </div>
         <div className="containerCards">
-
         <CardsLugar img='https://res.cloudinary.com/dlohqvzri/image/upload/v1684445309/santaMarta_xtvqf2.jpg' content='Santa Marta' style='Cardtitulociudad'/>
         <CardsLugar img='https://res.cloudinary.com/dlohqvzri/image/upload/v1684443016/cartagena_mhqdmc.jpg' content='Cartagena' style='Cardtitulociudad'/>
         <CardsLugar img='https://res.cloudinary.com/dlohqvzri/image/upload/v1684443476/piscilago_m9tivm.jpg' content='Piscilago' style='Cardtitulociudad'/>
@@ -19,7 +18,7 @@ export const CardsLugares = () => {
         <CardsLugar img='https://res.cloudinary.com/dlohqvzri/image/upload/v1684448884/cove%C3%B1as_xzp4zc.jpg' content='Coveñas' style='Cardtitulociudad'/>
         <CardsLugar img='https://res.cloudinary.com/dlohqvzri/image/upload/v1684448921/estadio_metropolitano_z6k8cu.jpg' content='Estadio Metropolitano de Barranquilla' style='Cardtitulociudad'/>
         <CardsLugar img='https://res.cloudinary.com/dlohqvzri/image/upload/v1684447768/imagen2_o1vimc.jpg' content='Piedra del peñol' style='Cardtitulociudad'/>
-        <UiCardLugar/>
+        <UiCardLugar content='Conoce más sobre nuestros destinos' to='/Lugares'/>
         </div>
     </div>
   )

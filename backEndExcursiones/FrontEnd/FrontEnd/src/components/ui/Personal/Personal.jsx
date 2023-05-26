@@ -4,7 +4,7 @@ import { Persona } from '../Persona/Persona'
 export const Personal = () => {
   return (
     <div className='personal'>
-        <h2 className='titulopersonas'>PERSONAL</h2>
+        <h1 className='titulopersonas'>PERSONAL</h1>
         <hr className='hrPersonal'/>
         <Persona/>
     </div>

@@ -14,6 +14,7 @@ import { HeaderA } from './components/ADMINISTRADOR/layouts/HeaderA/HeaderA.jsx'
 import { ContenidoA } from './components/ADMINISTRADOR/pages/ContenidoA/ContenidoA.jsx'
 import { PageLugares } from './components/pages/PageLugares/PageLugares';
 import { RecuperacionDeContraseña } from './components/layouts/RecuperacionDeContraseña/RecuperacionDeContraseña';
+import { Testimonios } from './components/layouts/Testimonios/Testimonios';
 
 
 export const Desktop = () => {
@@ -45,9 +46,10 @@ export const Desktop = () => {
     <div>
     <Routes>
       <Route path='/' element={<Home/>}/>
+      <Route path='/Lugares' element={<PageLugares/>}/>
+      <Route path='/Testimonios' element={<Testimonios/>}/>
       <Route path='/Login' element={<Login user={user} setUser={setUser}/>}/>
       <Route path='/Contenido' element={<Contenido/>}/>
-      <Route path='/Lugares' element={<PageLugares/>}/>
       <Route path='/RecuperacionContraseña' element={<RecuperacionDeContraseña/>}/>
     </Routes>
     </div>
