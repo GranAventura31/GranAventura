@@ -2,8 +2,7 @@ import React from 'react'
 import { Reserva } from '../Reserva/Reserva'
 
 
-
-export const RESERVAR = () => {
+export const RESERVARA = () => {
   return (
     <div>
         <div className='Reserva'>
@@ -11,7 +10,7 @@ export const RESERVAR = () => {
         <hr className='HrReserva'/>
         </div>
         <div>
-          <Reserva/>
+            <Reserva />
         </div>
     </div>
   )

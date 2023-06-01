@@ -5,11 +5,10 @@ import Modal from 'react-modal'
 import { loadStripe } from "@stripe/stripe-js"
 import { Elements, CardElement, useStripe, useElements } from "@stripe/react-stripe-js"
 import axios from "axios";
-import {AiOutlineArrowLeft} from 'react-icons/ai'
 
 const stripePromise = loadStripe('pk_test_51NBLwlHRmqMvRqXdLkSWy4RrSbSVG6StVwK5qFNdM68AkJjwwT0EermDVi3cHWk2FElFvne4G5AtOeLBXmwC1WpV00kLzJATet')
 
-const CheckoutForm =  () => {
+const KitA =  () => {
 
 	const stripe = useStripe();
 	const elements = useElements();
@@ -50,11 +49,18 @@ const CheckoutForm =  () => {
 }
 
 export const Kit = () => {
+  let subtitle;
+
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
     setIsOpen(true);
   }
+
+  // function afterOpenModal() {
+  //   // references are now sync'd and can be accessed.
+  //   subtitle.style.color = '#f00';
+  // }
 
   function closeModal() {
     setIsOpen(false);
@@ -80,11 +86,10 @@ export const Kit = () => {
         onRequestClose={closeModal}
         contentLabel="Example Modal" className="modalCompra">
           <Elements stripe={stripePromise} >
-            <Link className='devolverRecuperacion' to='/Login'><AiOutlineArrowLeft/></Link>
             <div className="bodyCompra">
               <div className="cardCompra"> 
                 <div>
-                  <CheckoutForm/>
+                  <KitA/>
                 </div>
               </div>
             </div>

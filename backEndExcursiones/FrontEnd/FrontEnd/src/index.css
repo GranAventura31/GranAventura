@@ -174,11 +174,13 @@ main{
 .Cardparrafotestimonios{
   font-size: 1.3rem;
   margin-left: 5rem;
+  margin-top: 1rem;
 }
 .Cardparrafotestimonios2{
   font-size: 1rem;
   margin-left: 1.5rem;
   color: white;
+  text-decoration: none;
 }
 
 /* link cards cities */
@@ -206,14 +208,14 @@ main{
 }
 .CardTestimonios{
   width: 25rem;
-  height: 10rem;
+  height: 15rem;
   margin-bottom: 6rem;
 }
 
 .CardImagen{
   border-radius: 2rem 2rem 0 0;
   width: 100%;
-  height: 60%;
+  height: 70%;
   overflow: hidden;
   display: flex;
   background-color: #000000;
@@ -224,14 +226,14 @@ main{
 }
 .CardtituloTestimonio{
   color: rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .imagenTestimonio{
   width: 25%;
-  height: 75%;
+  height: 55%;
   border-radius: 10rem;
   margin-left: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   -webkit-transition: 1s linear;
   transition: 1s linear;
 }
@@ -1396,4 +1398,45 @@ input[type=number]::-webkit-outer-spin-button {
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 2rem;
+}
+
+
+
+/* Reserva de todo el paquete Modal*/
+.reservaModal{
+  background: #ffffff;
+  width: 50%;
+  height: 80%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 6rem 0 0 30rem;
+  border: solid 2px;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px #000000;
+}
+.imagenReservaModal1{
+  width: 70%;
+  height: 30%;
+  border-radius: 2rem 2rem 0 0;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  margin-left: 6rem;
+}
+
+.h2reservaModal{
+  margin-top: 3rem;
+}
+.p1reservaModal{
+  margin-top: 2rem;
+}
+.radio2{
+  cursor: pointer;
+}
+.radio1{
+  cursor: pointer;
+}
+.FormGroup{
+  display: flex;
+  justify-content: space-between;
 }

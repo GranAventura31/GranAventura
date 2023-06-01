@@ -9,7 +9,7 @@ import { Link }  from 'react-router-dom'
 import { Routes, Route} from 'react-router-dom'
 
 
-export const InicioSesion = ({user, setUser}) => {
+export const InicioSesionA = ({user, setUser}) => {
 
   const [clas, setClas] = useState(false);
 
@@ -100,6 +100,9 @@ const login = (e) => {
     })
   }
 }
+
+
+
   return (
     <Fragment>
       <div className='contenedor'>
