@@ -80,7 +80,9 @@ export const Kit = () => {
         onRequestClose={closeModal}
         contentLabel="Example Modal" className="modalCompra">
           <Elements stripe={stripePromise} >
-            <Link className='devolverRecuperacion' to='/Login'><AiOutlineArrowLeft/></Link>
+            {/* <Link className='devolverRecuperacion' to='/Login'> */}
+              <AiOutlineArrowLeft className='devolverRecuperacion' onClick={closeModal}/>
+              {/* </Link> */}
             <div className="bodyCompra">
               <div className="cardCompra"> 
                 <div>

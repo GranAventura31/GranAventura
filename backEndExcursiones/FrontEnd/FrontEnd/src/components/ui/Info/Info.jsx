@@ -8,6 +8,10 @@ export const Info = () => {
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -18,6 +22,18 @@ export const Info = () => {
     </div>
     <div class="carousel-item">
       <img src="https://res.cloudinary.com/dlohqvzri/image/upload/v1684447771/imagen3_spwtu2.jpg" className="d-block" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src="https://res.cloudinary.com/dlohqvzri/image/upload/v1685651853/excursion1_4_dtr7vd.jpg" className="d-block" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src="https://res.cloudinary.com/dlohqvzri/image/upload/v1685651860/excursion1_2_fdfwls.jpg" className="d-block" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src="https://res.cloudinary.com/dlohqvzri/image/upload/v1685651882/excursion_dmcclq.jpg" className="d-block" alt="..."/>
+    </div>
+    <div class="carousel-item">
+      <img src="https://res.cloudinary.com/dlohqvzri/image/upload/v1685651767/excursion1_3_tg3h3q.jpg" className="d-block" alt="..."/>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

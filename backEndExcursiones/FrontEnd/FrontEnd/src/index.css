@@ -89,8 +89,8 @@ main{
   width: 118.9rem;
 }
 .d-block {
-  width: 119rem;
-  height: 50rem;
+  width: 118.9rem;
+  height: 60rem;
 }
 .lugares{
   width: 100%;
@@ -114,9 +114,9 @@ main{
   padding: 3rem 10rem 0 10rem;
 }
 
-.titulolugares{
+.tituloTestimonios{
   display: flex;
-  font-size: 10rem;
+  font-size: 3rem;
   justify-content: center;
   padding-top: 5rem;
 }
@@ -193,6 +193,10 @@ main{
   border-radius: 10px;
   background: #1dad78;
 }
+.Cardslog:hover{
+  background: #1cd48d;
+}
+
 
 
 /* cards testimony*/
@@ -279,7 +283,8 @@ main{
 }
 
 .personal{
-  margin-top: 3rem;
+  margin-top: 10rem;
+  background: rgb(228, 228, 228);
 }
 
 .titulopersonas{
@@ -292,11 +297,12 @@ main{
 
 .personas{
   width: 80rem;
+  height: 40rem;
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap ;
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-left: 17rem;
 }
 
@@ -310,6 +316,7 @@ main{
   width: 90%;
   height: 90%;
   margin: 0.7rem;
+  border-radius: 2rem 2rem 0 0;
 }
 
 .persona{
@@ -770,7 +777,7 @@ main{
 
 .imagenkit:hover.imagenkit {
     -webkit-transform:scale(1.0);
-    transform:scale(1.09);
+    transform:scale(1.02);
 }
 .imagenkit {
   overflow:hidden;
@@ -866,8 +873,6 @@ main{
   font-size: 1.3rem;
 }
 
-
-
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
@@ -957,7 +962,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   font-size: 3rem;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 15rem;
 }
 .ciudadIzquierdaI{
   width: 80rem;
@@ -1197,64 +1202,52 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Footer Center */
 
-.site-footer
-{
-  background-color: #9ba0a7;
+.site-footer{
+  background-color: white;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:#000000;
+  margin-top: 3rem;
 }
-.site-footer hr
-{
-  border-top-color:#bbb;
+.site-footer hr{
+  border-top-color:#000000;
   opacity:0.5
 }
-.site-footer hr.small
-{
+.site-footer hr.small{
   margin:20px 0
 }
-.site-footer h6
-{
-  color:#fff;
+.site-footer h6{
+  color:#000000;
   font-size:20px;
   text-transform:uppercase;
   margin-top:3px;
   letter-spacing:2px
 }
-.site-footer a
-{
-  color:#737373;
+.site-footer a{
+  color:#000000;
 }
-.site-footer a:hover
-{
+.site-footer a:hover{
   color:#3366cc;
   text-decoration:none;
 }
-.footer-links
-{
+.footer-links{
   padding-left:0;
   list-style:none
 }
-.footer-links li
-{
+.footer-links li{
   display:block
 }
-.footer-links a
-{
-  color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
+.footer-links a{
+  color:#000000}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover{
   color:#3366cc;
   text-decoration:none;
 }
-.footer-links.inline li
-{
+.footer-links.inline li{
   display:inline-block
 }
-.site-footer .social-icons
-{
+.site-footer .social-icons{
   text-align:right
 }
 .site-footer .social-icons a
@@ -1387,7 +1380,7 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #1cd48d;
 }
 .btnReserva{
-  width: 100%;
+  width: 20rem;
   height: 45px;
   background: #162938;
   border: none;
@@ -1399,36 +1392,42 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: bold;
   margin-bottom: 2rem;
 }
+.btnReserva:hover{
+  background: #149463;
+}
 
 
 
 /* Reserva de todo el paquete Modal*/
 .reservaModal{
-  background: #ffffff;
-  width: 50%;
-  height: 80%;
+  background: #ffffff; 
+  width: 80%;
+  height: 55rem;
   display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  margin: 6rem 0 0 30rem;
+  margin: 3rem 0 0 15rem;
   border: solid 2px;
   border-radius: 1rem;
-  box-shadow: 0 0 30px #000000;
+  margin-bottom: 10rem;
+  box-shadow: 0 0 30px #000000; 
 }
+.h1reservaModal{
+  text-align: center;
+}
+
 .imagenReservaModal1{
   width: 70%;
   height: 30%;
   border-radius: 2rem 2rem 0 0;
   -webkit-transition: 1s linear;
   transition: 1s linear;
-  margin-left: 6rem;
+  margin-left: 14rem;
 }
 
 .h2reservaModal{
-  margin-top: 3rem;
+  text-align: center;
 }
 .p1reservaModal{
-  margin-top: 2rem;
+  text-align: center;
 }
 .radio2{
   cursor: pointer;
@@ -1438,5 +1437,84 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .FormGroup{
   display: flex;
-  justify-content: space-between;
+}
+
+.imagenBoletas{
+  width: 80%;
+  height: 100%;
+  margin-left: 2rem;
+  border-radius: 10px 10px 0 0;
+}
+.imagentransaccion{
+  width: 40%;
+  height: 100%;
+  margin-left: 2rem;
+
+}
+.hrBoletas{
+  border-radius: 10px 10px 0 0;
+  border: none;
+  border-left: 1px solid hsla(200, 10%, 50%,100);
+  height: 3rem;
+  width: 1px;
+  margin-left: 30px;
+  background-color: #1cd48d;
+}
+.formGroupBoletas{
+  width: 35%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px #000;
+  border-radius: 10px;
+  margin-left: 10rem;
+}
+.formGroupTransaccion{
+  width: 35%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px #000;
+  border-radius: 10px;
+  margin-left: 5rem;
+}
+
+.imgBoletas{
+  width: 100%;
+  height: 90%;
+  margin-left: 2rem;
+}
+
+.radioBoletas{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.btnReservaTotal{
+  width: 20rem;
+  height: 45px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 2rem 0 0 36rem;
+}
+.btnReservaTotal:hover{
+  background: #199a68;
+}
+
+.devolverModal{
+  font-size: 2rem;
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  color: #000000;
 }

@@ -2,16 +2,15 @@ import React, {useState} from 'react'
 import { MdEmail } from 'react-icons/md';
 import { RiLockPasswordFill } from 'react-icons/ri';
 import Modal from 'react-modal'
-import {Field} from 'react'
 import swal from 'sweetalert2';
 import { FormGroup,Input,Label } from 'reactstrap'
+import {AiOutlineArrowLeft} from 'react-icons/ai'
 
 export const Reserva = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   
   const [nombre, setNombre] = useState("");
   const [correo, setCorreo] = useState("");
-  // const [colegio, setColegio] = useState("");
   const [telefono, setTelefono] = useState("");
 
   const [elejirColegio, setElejirColegio] = useState()
@@ -92,14 +91,6 @@ export const Reserva = () => {
                 </FormGroup>
               </FormGroup>
               </div>
-              {/* <div className='input-box'>
-                  <span className="icon">
-                    <RiLockPasswordFill/>
-                  </span>
-                  <input type="text" name="colegio" onChange={(e) => {setColegio(e.target.value)}}  required/>
-                  <label>Colegio o persona del comun</label>
-              </div> */}
-              
               <button type='submit' className="btnReserva" onClick={openModal}> Reservar </button>
             </form>
             <Modal
@@ -107,45 +98,35 @@ export const Reserva = () => {
             onRequestClose={closeModal}
             contentLabel="Example Modal" 
             className="reservaModal">
-              <div>
-              <h1 className='h1reservaModal'>¡Gracias por confiar en nosotros!</h1>
-              <img src="https://res.cloudinary.com/dlohqvzri/image/upload/v1684447771/imagen3_spwtu2.jpg" alt="" className='imagenReservaModal1'/>
-              <h2 className='h2reservaModal'>Reserva de la excursión</h2>
-              <p className='p1reservaModal'>Este paquete lleva todo lo que les de la gana</p>
-              <p>-{correo}</p>
-              {/* <p>-{nombre}</p>
-              <p>-{framework}</p> */}
+              <AiOutlineArrowLeft className='devolverModal' onClick={closeModal}/>
+              <div className='reservaModal1'>
+                <h1 className='h1reservaModal'>¡Gracias por confiar en nosotros!</h1>
+                <img src="https://res.cloudinary.com/dlohqvzri/image/upload/v1684447771/imagen3_spwtu2.jpg" alt="" className='imagenReservaModal1'/>
+                <h2 className='h2reservaModal'>Reserva de la excursión</h2>
+                <p className='p1reservaModal'>Este paquete lleva todo lo que les de la gana</p> 
               <FormGroup className='FormGroup'>
-                <div>
-                <FormGroup>
+                <div className='formGroupBoletas'> 
+                  <div className='imgBoletas'>
+                      <img src="https://res.cloudinary.com/dlohqvzri/image/upload/v1685743791/boletas_k499s9.jpg" className='imagenBoletas' alt="" />
+                  </div>
+                <FormGroup className='radioBoletas'>
                   <Input type="radio" className='boletas1' value='Boletas' onChange={cambioRadioTransaccion} checked={transaccion == 'Boletas' ? true: false}/>
                   <Label for='boletas1'>Boletas</Label>
                 </FormGroup>
                 </div>
-                <div>
+                <div className='formGroupTransaccion'> 
+                  <div className='imgBoletas'>
+                      <img src="https://res.cloudinary.com/dlohqvzri/image/upload/v1685743918/bancolombia_owg4e4.jpg" className='imagentransaccion' alt="" />
+                      <img src="https://res.cloudinary.com/dlohqvzri/image/upload/v1685739504/nequi_zrtfvk.webp" className='imagentransaccion' alt="" />
+                  </div>
                 <FormGroup>
                   <Input type="radio" className='transaccion2' value='Transaccion' onChange={cambioRadioTransaccion} checked={transaccion == 'Transaccion' ? true: false}/>
                   <Label for='transaccion2' className='radio2'>Transaccion</Label>
                 </FormGroup>
                 </div>
               </FormGroup>
-
-              <button className='btnReserva'>Reservar</button>
-              
+              <button className='btnReservaTotal'>Reservar</button>
               </div>
-              
-              {/* <FormControl>
-                <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
-                <RadioGroup
-                  aria-labelledby="demo-radio-buttons-group-label"
-                  defaultValue="female"
-                  name="radio-buttons-group"
-                >
-                  <FormControlLabel value="female" control={<Radio />} label="Female" />
-                  <FormControlLabel value="male" control={<Radio />} label="Male" />
-                  <FormControlLabel value="other" control={<Radio />} label="Other" />
-                </RadioGroup>
-              </FormControl> */}
             </Modal>
     </div>
   )

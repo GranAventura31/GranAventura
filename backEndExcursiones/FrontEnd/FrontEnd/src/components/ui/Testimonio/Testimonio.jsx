@@ -9,7 +9,7 @@ export const Testimonio = ({img, content, pcontent,pcontent2, style, stylep,styl
             <img src={img} alt="" className={style}/>
             <div className='CardH1P'>
               <h1 className={styleh1}>{content}</h1>
-              <a href={referencia} className={stylep}><p>{pcontent}</p></a>
+              <a href={referencia} className={stylep} target='_black'><p>{pcontent}</p></a>
             </div> 
           </div>
           <div className='CardInformacionTestimonio'>
