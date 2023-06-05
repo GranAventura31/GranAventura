@@ -1,6 +1,4 @@
-// const Router  = require('express')
 const express = require('express')
-// const connection = require('express-myconnection')
 const routes = express.Router()
 const nodemailer = require('nodemailer')
 const crypto = require('crypto')
@@ -58,6 +56,23 @@ routes.post('/Register', (req, res) => {
     req.getConnection((err,conn) =>{
         if (err) return res.send(err)
         conn.query('CALL RegistrarUsuario(?,?,?,?,?)',[nombre,correo,contrasena,rol,telefono], (err, rows) => {
+            if(err) return res.send(err)
+
+            res.send({'response':'User Inserted'})
+        })
+    })
+})
+
+routes.post('/reserva', (req, res) => {
+
+    const nombre = req.body.nombre;
+    const correo = req.body.correo;
+    const telefono = req.body.telefono;
+    const colegio = req.body.colegio;
+    const pay = req.body.pay;
+    req.getConnection((err,conn) =>{
+        if (err) return res.send(err)
+        conn.query('CALL reservaUsuario(?,?,?,?,?)',[nombre,correo,colegio,pay,telefono], (err, rows) => {
             if(err) return res.send(err)
 
             res.send({'response':'User Inserted'})

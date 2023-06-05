@@ -10,7 +10,7 @@ export const Footer = () => {
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <h6>GRAN AVENTURA</h6>
-          <p class="text-justify">granaventura.com. <i>Empresa de Viajes. </i> Tenemos 5 años cumpliéndole a los estudiantes del departamento del Quindío. Ofrecemos una excursión que nunca olvidarán, somo garantía de calidad</p>
+          <p class="text-justify">granaventura.com. <i>Empresa de Viajes. </i> Tenemos 10 años cumpliéndole a los estudiantes del departamento del Quindío. Ofrecemos una excursión que nunca olvidarán, somo garantía de calidad</p>
         </div>
         <div class="col-xs-6 col-md-3">
           <h6>Quick Links</h6>

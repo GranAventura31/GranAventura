@@ -12,7 +12,7 @@ header{
   width: 100%;
   height: 6rem;
   display: flex;
-  background: rgb(228, 228, 228);
+  background: rgb(255, 255, 255);
   justify-content: space-between;
 }
 
@@ -122,6 +122,10 @@ main{
 }
 
 /* div cards cities */
+.containerCards1{
+  background: rgb(228, 228, 228);
+
+}
 .containerCards{
   display: flex;
   flex-wrap: wrap;
@@ -201,7 +205,6 @@ main{
 
 /* cards testimony*/
 .DivTestimonioss{
-  background: rgb(228, 228, 228);
   /* height: 70rem; */
 }
 .DivCardTestimonios{
@@ -283,8 +286,7 @@ main{
 }
 
 .personal{
-  margin-top: 10rem;
-  background: rgb(228, 228, 228);
+  margin-top: 5rem;
 }
 
 .titulopersonas{
@@ -318,7 +320,12 @@ main{
   margin: 0.7rem;
   border-radius: 2rem 2rem 0 0;
 }
-
+.imagenpersonal{
+  width: 17rem;
+  height: 23rem;
+  margin: 0.7rem;
+  border-radius: 2rem 2rem 0 0;
+}
 .persona{
   width: 19rem;
 }
@@ -395,8 +402,6 @@ main{
   margin-left: 40rem;
   background-color: #1cd48d;
 }
-
-
 
 .rol{
   display: flex;
@@ -742,6 +747,11 @@ main{
 
 
 /* Contenido */
+/* .KIT{ */
+  /* width: 100%; */
+  /* height: 85rem;
+  background-color: rgb(236, 236, 236) ;
+} */
 .tituloKit{
   display: flex;
   justify-content: center;
@@ -752,12 +762,11 @@ main{
 
 
 .Kits{
-  background-color: rgb(236, 236, 236) ;
+  background-color: rgb(255, 255, 255) ;
   width: 60rem;
   height: 23rem;
   display: flex;
   flex-direction: row;
-
   border-radius: 1rem;
   margin-top: 3rem;
   margin-left: 27rem;
@@ -830,12 +839,15 @@ main{
 }
 
 .DivProductos{
+  background-color: rgb(255, 255, 255);
   margin-left: 20rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 80rem;
+  height: 43rem;
   margin-right: 20rem;
+  border-radius: 2rem;
   margin-top: 3rem;
 }
 
@@ -845,8 +857,9 @@ main{
   flex-direction: column;
   margin-right: 5rem;
   margin-top: 2rem ;
-  width: 15rem;
+  width: 13rem;
   height: 17rem;
+  margin-left: 2rem;
   background: rgb(236, 236, 236);
   border-radius: 1rem;
 }
@@ -1203,12 +1216,12 @@ input[type=number]::-webkit-outer-spin-button {
 /* Footer Center */
 
 .site-footer{
-  background-color: white;
+  background: rgb(228, 228, 228);
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
   color:#000000;
-  margin-top: 3rem;
+  margin-top: 7rem;
 }
 .site-footer hr{
   border-top-color:#000000;
@@ -1365,7 +1378,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin-top: 5rem;
   border-radius: 2rem;
   border:solid #000000;
-  background: rgb(228, 228, 228);
+  background: rgb(255, 255, 255);
 }
 .tituloReserva{
   display: flex;
@@ -1399,6 +1412,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 /* Reserva de todo el paquete Modal*/
+.Reserva1{
+  width: 100%;
+  height: 60rem;
+  background: rgb(228, 228, 228);
+}
 .reservaModal{
   background: #ffffff; 
   width: 80%;
@@ -1416,7 +1434,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .imagenReservaModal1{
   width: 70%;
-  height: 30%;
+  height: 35%;
   border-radius: 2rem 2rem 0 0;
   -webkit-transition: 1s linear;
   transition: 1s linear;
@@ -1440,51 +1458,60 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .imagenBoletas{
-  width: 80%;
+  width: 50%;
   height: 100%;
-  margin-left: 2rem;
-  border-radius: 10px 10px 0 0;
+  margin-left: 7rem;
+  border-radius: 10px;
+}
+.labelBoletas{
+  margin-top: 0.5rem;
+  padding: 0 1rem 0 1rem;
+  text-align: justify;
+}
+.labelBoletas2{
+  margin-right: 13rem;
+}
+.labelTransaccion{
+  margin-right: 5rem;
+  margin-top: 1rem;
+}
+.labelTransaccion2{
+  margin-right: 15rem;
 }
 .imagentransaccion{
-  width: 40%;
+  width: 45%;
   height: 100%;
-  margin-left: 2rem;
+}
 
-}
-.hrBoletas{
-  border-radius: 10px 10px 0 0;
-  border: none;
-  border-left: 1px solid hsla(200, 10%, 50%,100);
-  height: 3rem;
-  width: 1px;
-  margin-left: 30px;
-  background-color: #1cd48d;
-}
 .formGroupBoletas{
   width: 35%;
-  height: 15rem;
+  height: 17rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: solid 2px #000;
   border-radius: 10px;
   margin-left: 10rem;
+  margin-top: 1rem;
 }
+
 .formGroupTransaccion{
   width: 35%;
-  height: 15rem;
+  height: 17rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: solid 2px #000;
   border-radius: 10px;
   margin-left: 5rem;
+  margin-top: 1rem;
 }
 
 .imgBoletas{
   width: 100%;
-  height: 90%;
+  height: 50%;
   margin-left: 2rem;
+  margin-top: 10px;
 }
 
 .radioBoletas{
@@ -1517,4 +1544,137 @@ input[type=number]::-webkit-outer-spin-button {
   margin-left: 1rem;
   margin-top: 2rem;
   color: #000000;
+}
+
+@media only screen and (max-width: 1440px) {
+  .Info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88.9rem;
+  }
+}
+
+
+@media only screen and (max-width: 1440px) {
+  
+  .d-block {
+    width: 100%;
+    height: 30%;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1440px) {
+  .personas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    margin-top: 3rem;
+  }
+}
+
+
+
+@media  only screen and (max-width: 1440px) {
+  .hrCardLugaresAVisitar{
+    margin-left: 29rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 1440px) {
+  .form-box-Reserva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin-left: 22rem;
+    margin-top: 5rem;
+    border-radius: 2rem;
+    border:solid #000000;
+    /* background: rgb(255, 0, 0); */
+  }
+}
+
+
+@media only screen and (max-width: 1440px){
+  .btn-wsp{
+    margin-top: 46rem;
+  }
+}
+
+
+
+@media only screen and (max-width:1440px){
+  .hrTestimonios{
+    margin-left: 35.5rem;
+  }
+}
+
+
+
+@media only screen and (max-width:1440px){
+  .HrReserva{
+    margin-left:37rem
+  }
+}
+
+@media only screen and (max-width:1440px){
+  .Kits{
+    margin-left: 18rem;  
+  }
+}
+
+
+
+
+@media only screen and (max-width:1440px){
+  .hrKit{
+    margin-left: 38rem;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 1440px){
+  .DivProductos{
+    margin-left: 8rem;
+  }
+}
+
+
+@media only screen and (max-width:1440px){
+  .hrDocumento{
+    margin-left: 29rem;
+  }
+}
+
+
+@media only screen and (max-width:1440px){
+  .hrLugaresVisitar{
+    margin-left: 25rem;
+  }
+}
+
+
+@media only screen and (max-width:1440px){
+  .ciudadIzquierdaI{
+    margin-left: 2rem;
+  }
+}
+
+
+
+@media only screen and (max-width:1440px){
+  .ciudadDerecha{
+    margin-left: 2rem;
+  }
 }

@@ -1,14 +1,16 @@
 import React from 'react'
 import { Kit } from '../../../components/ui/kit/kit'
+import { TarjetasKits } from '../../ui/TarjetasKits/TarjetasKits'
 
 export const Kits = () => {
   return (
-    <div>
+    <div className='KIT'> 
       <h2 className='tituloKit'>KITS</h2>
       <hr className='hrKit'/>
-      <section className='containerkit'>
+      <section>
         <Kit/>
       </section>
+      <TarjetasKits/>
     </div>
   )
 }

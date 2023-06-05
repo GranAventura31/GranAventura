@@ -5,7 +5,7 @@ import { Reserva } from '../Reserva/Reserva'
 
 export const RESERVAR = () => {
   return (
-    <div>
+    <div className='Reserva1'>
         <div className='Reserva'>
         <h1 className='tituloReserva'>Reservar</h1>
         <hr className='HrReserva'/>

@@ -4,7 +4,7 @@ import { UiCardLugar } from '../UICardLugar/UiCardLugar'
 
 export const CardsLugares = () => {
   return (
-    <div>
+    <div className='containerCards1'>
         <div>
           <h1 className='titulolugares'>LUGARES A VISITAR</h1>
           <hr className='hrCardLugaresAVisitar'/>
