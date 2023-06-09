@@ -1,13 +1,19 @@
 
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-import { Desktop } from './Desktop'
+import { Desktop } from '../src/Desktop/Desktop'
+import { Mobile } from '../src/Mobile/Mobile';
 
 function App() {
   
   return (
-     <BrowserView>
+   <>
+      <BrowserView>
         <Desktop/>
-     </BrowserView>
+      </BrowserView> 
+      <MobileView>
+         <Mobile/>
+      </MobileView>
+   </>
   );
 }
 
